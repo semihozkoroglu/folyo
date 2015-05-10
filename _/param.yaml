@@ -1,0 +1,16 @@
+---
+author: 'Semih Özköroğlu'
+description: 'Folyolar'
+email: 'semihozkoroglu@gmail.com'
+url: 'semihozkoroglu.github.io/fo'
+domain: 'semihozkoroglu.github.io'
+intro: ''
+googleanalytics: ''
+googleplus: ''
+brand: default
+landslide: /usr/local/bin/landslide
+css: _/default.css
+js: _/default.js
+theme: light
+indextemplate: _/index.erb
+foliotemplate: _/default.erb
