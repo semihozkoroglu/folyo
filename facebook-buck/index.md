@@ -8,21 +8,19 @@ http://semihozkoroglu.github.io/
 
 Mayıs 2015
 
-##  Bir Doküman Türü
+##  Özellikleri
 
-Folyo → Bir doküman türü
+-   Daha hızlı derleme
 
--   Uydurduğumuz bir terim
+-   Bağımsız class'ları paralel olarak derler
 
--   Slayt veya sunu değil folyo
+-   Değiştirilmeyen dosyaları rebuilt etmez
 
--   Bu bir doküman türü; kitap, makale gibi
+-   Genel olarak odaklandığı nokta hız, ant'a göre iki kat daha hızlı derleme yapar
 
--   Genel olarak bir konunun özünü anlatmayı kolaylaştıran bir doküman türü
+##  Benim için mi?
 
-##  Öncü Doküman
-
-Daha uzun ve kapsamlı bir doküman türüne hazırlık
+Buck 3 tane öncelikli kavrama sahip
 
 -   Örneğin bir makale yazarken ana fikri önce folyo biçiminde
     hazırlayabilirsiniz
