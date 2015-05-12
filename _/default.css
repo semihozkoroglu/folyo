@@ -16,7 +16,7 @@ ul li p {
 ul li pre { text-indent: 0; }
 ul li:before {
   content: '\25B6 \0020';
-  color: #9c000d;
+  color: #F77700;
   line-height:80%;
   vertical-align: 16%;
   padding-right: 0.4em;
@@ -92,7 +92,7 @@ div.slide {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: -webkit-gradient(linear, left bottom, left top, from(#9c000d), to(#eee));
+  background: -webkit-gradient(linear, left bottom, left top, from(#F77700), to(#eee));
 }
 ::-webkit-scrollbar-thumb:horizontal { /* no horizontal scrollbar */
   background: none;
@@ -104,7 +104,7 @@ div.slide {
   border-radius: 20px;
 }
 .slide.task header {
-  color: #9c000d;
+  color: #F77700;
 }
 
 .slide.achtung {
@@ -113,7 +113,7 @@ div.slide {
   border-radius: 20px;
 }
 .slide.achtung header {
-  color: #9c000d;
+  color: #F77700;
 }
 
 .slide.wrong {
@@ -122,7 +122,7 @@ div.slide {
   border-radius: 20px;
 }
 .slide.wrong header {
-  color: #9c000d;
+  color: #F77700;
 }
 
 .slide.correct {
@@ -136,7 +136,7 @@ div.slide {
   text-align: center;
 }
 .slide.first header {
-  color: #9c000d;
+  color: #F77700;
   width: 900px;
   padding-top: 30px;
   margin-left: 0px;
@@ -145,7 +145,7 @@ div.slide {
   margin-bottom: 20px;
   left: 0px;
   color: white;
-  background-color: #9c000d;
+  background-color: #F77700;
   -moz-border-radius: 0.15em 0.15em 0.15em 0.15em;
   border-radius: 0.15em 0.15em 0.15em 0.15em;
   height: 80px;
@@ -177,7 +177,7 @@ dt {
   display: inline;
   padding: 8px;
   color: white;
-  background-color: #9c000d;
+  background-color: #F77700;
   border-radius: 4px;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
