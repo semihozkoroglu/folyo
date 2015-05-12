@@ -29,14 +29,6 @@ Build          | `39.50s`        | `3.44s`
 After Clean    | `63.05s`        | `7.03s`
 Parallel Build | `60.83s`        |
 
-##  Bilgi Notları
-
-Öğrenme süreçlerinde alınan bilgi notları
-
--   Etkili bir not alma aracı
-
--   Folyoyu çalışma notlarını kaydetmek için kullanabilirsiniz
-
 ## Karşılaşılan Problemler
 
 -   Kullanımı zor
@@ -48,4 +40,4 @@ Parallel Build | `60.83s`        |
 ## BUCK file
 
         !text
-        .code: code/BUCK
+        .code: code/BUCK.java
