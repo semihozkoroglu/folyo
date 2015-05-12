@@ -1907,23 +1907,50 @@ div.slide table:not(.highlighttable) tr td:first-child {
       
       <!-- slide source: facebook-buck/index.md -->
       <div class="slide-wrapper">
-        <div class="slide">
+        <div class="slide has_code">
           <div class="inner">
             
-            <header><h2>Karşılaşılan Problemler</h2></header>
+            <header><h2>BUCK file</h2></header>
             
             
-            <section><ul>
-<li>
-<p>Kullanımı zor</p>
-</li>
-<li>
-<p>Geanymotion ile çalışmıyor</p>
-</li>
-<li>
-<p>IDE ye entegre problemi</p>
-</li>
-</ul></section>
+            <section><div class="highlight"><pre>    <span class="n">keystore</span><span class="p">(</span>
+        <span class="nb">name</span> <span class="o">=</span> <span class="s1">&#39;debug_keystore&#39;</span><span class="p">,</span>
+        <span class="n">store</span> <span class="o">=</span> <span class="s1">&#39;debug.keystore&#39;</span><span class="p">,</span>
+        <span class="n">properties</span> <span class="o">=</span> <span class="s1">&#39;debug.keystore.properties&#39;</span><span class="p">,</span>
+    <span class="p">)</span>
+
+    <span class="n">android_resource</span><span class="p">(</span>
+        <span class="nb">name</span> <span class="o">=</span> <span class="s1">&#39;res&#39;</span><span class="p">,</span>
+        <span class="n">res</span> <span class="o">=</span> <span class="s1">&#39;src/main/res&#39;</span><span class="p">,</span>
+        <span class="n">package</span> <span class="o">=</span> <span class="s1">&#39;com.facebook.shimmer.example&#39;</span><span class="p">,</span>
+        <span class="n">visibility</span> <span class="o">=</span> <span class="o">[</span><span class="s1">&#39;//shimmer-android-example:src&#39;</span><span class="o">]</span><span class="p">,</span>
+    <span class="p">)</span>
+
+    <span class="n">android_library</span><span class="p">(</span>
+        <span class="nb">name</span> <span class="o">=</span> <span class="s1">&#39;src&#39;</span><span class="p">,</span>
+        <span class="n">srcs</span> <span class="o">=</span> <span class="n">glob</span><span class="p">(</span><span class="o">[</span><span class="s1">&#39;src/main/java/**/*.java&#39;</span><span class="o">]</span><span class="p">),</span>
+        <span class="n">deps</span> <span class="o">=</span> <span class="o">[</span>
+            <span class="s1">&#39;:res&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;//shimmer-android:src&#39;</span><span class="p">,</span>
+        <span class="o">]</span><span class="p">,</span>
+    <span class="p">)</span>
+
+    <span class="n">android_binary</span><span class="p">(</span>
+        <span class="nb">name</span> <span class="o">=</span> <span class="s1">&#39;bin&#39;</span><span class="p">,</span>
+        <span class="n">manifest</span> <span class="o">=</span> <span class="s1">&#39;src/main/AndroidManifest.xml&#39;</span><span class="p">,</span>
+        <span class="n">keystore</span> <span class="o">=</span> <span class="s1">&#39;:debug_keystore&#39;</span><span class="p">,</span>
+        <span class="n">deps</span> <span class="o">=</span> <span class="o">[</span>
+            <span class="s1">&#39;:res&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;:src&#39;</span><span class="p">,</span>
+        <span class="o">]</span><span class="p">,</span>
+    <span class="p">)</span>
+
+    <span class="n">project_config</span><span class="p">(</span>
+        <span class="n">src_target</span> <span class="o">=</span> <span class="s1">&#39;:bin&#39;</span><span class="p">,</span>
+        <span class="n">src_roots</span> <span class="o">=</span> <span class="o">[</span><span class="s1">&#39;src/main/java&#39;</span><span class="o">]</span><span class="p">,</span>
+    <span class="p">)</span>
+</pre></div>
+</section>
             
           </div>
           <div class="presenter_notes">
@@ -1950,46 +1977,20 @@ div.slide table:not(.highlighttable) tr td:first-child {
         <div class="slide">
           <div class="inner">
             
-            <header><h2>Configurasyon file</h2></header>
+            <header><h2>Karşılaşılan Problemler</h2></header>
             
             
-            <section><dl>
-<dt>BUCK</dt>
-<dd>
-<p>keystore(
-    name = 'debug_keystore',
-    store = 'debug.keystore',
-    properties = 'debug.keystore.properties',
-)</p>
-<p>android_resource(
-    name = 'res',
-    res = 'src/main/res',
-    package = 'com.facebook.shimmer.example',
-    visibility = ['//shimmer-android-example:src'],
-)</p>
-<p>android_library(
-    name = 'src',
-    srcs = glob(['src/main/java/*<em>/</em>.java']),
-    deps = [
-        ':res',
-        '//shimmer-android:src',
-    ],
-)</p>
-<p>android_binary(
-    name = 'bin',
-    manifest = 'src/main/AndroidManifest.xml',
-    keystore = ':debug_keystore',
-    deps = [
-        ':res',
-        ':src',
-    ],
-)</p>
-<p>project_config(
-    src_target = ':bin',
-    src_roots = ['src/main/java'],
-)</p>
-</dd>
-</dl></section>
+            <section><ul>
+<li>
+<p>Kullanımı zor</p>
+</li>
+<li>
+<p>Geanymotion ile çalışmıyor</p>
+</li>
+<li>
+<p>IDE ye entegre problemi</p>
+</li>
+</ul></section>
             
           </div>
           <div class="presenter_notes">
@@ -2036,12 +2037,12 @@ div.slide table:not(.highlighttable) tr td:first-child {
         </tr>
         
         <tr id="toc-row-4" class="sub">
-          <th><a href="#slide4">Karşılaşılan Problemler</a></th>
+          <th><a href="#slide4">BUCK file</a></th>
           <td><a href="#slide4">4</a></td>
         </tr>
         
         <tr id="toc-row-5" class="sub">
-          <th><a href="#slide5">Configurasyon file</a></th>
+          <th><a href="#slide5">Karşılaşılan Problemler</a></th>
           <td><a href="#slide5">5</a></td>
         </tr>
         

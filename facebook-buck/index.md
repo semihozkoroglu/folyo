@@ -29,18 +29,10 @@ Build          | `39.50s`        | `3.44s`
 After Clean    | `63.05s`        | `7.03s`
 Parallel Build | `60.83s`        |
 
-## Karşılaşılan Problemler
+## BUCK file
 
--   Kullanımı zor
-
--   Geanymotion ile çalışmıyor
-
--   IDE ye entegre problemi
-
-## Configurasyon file
-
-BUCK
-:   keystore(
+```ruby
+    keystore(
         name = 'debug_keystore',
         store = 'debug.keystore',
         properties = 'debug.keystore.properties',
@@ -76,3 +68,12 @@ BUCK
         src_target = ':bin',
         src_roots = ['src/main/java'],
     )
+```
+
+## Karşılaşılan Problemler
+
+-   Kullanımı zor
+
+-   Geanymotion ile çalışmıyor
+
+-   IDE ye entegre problemi
