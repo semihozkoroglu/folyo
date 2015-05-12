@@ -1947,15 +1947,49 @@ div.slide table:not(.highlighttable) tr td:first-child {
       
       <!-- slide source: facebook-buck/index.md -->
       <div class="slide-wrapper">
-        <div class="slide has_code">
+        <div class="slide">
           <div class="inner">
             
-            <header><h2>BUCK file</h2></header>
+            <header><h2>Configurasyon file</h2></header>
             
             
-            <section><div class="highlight"><pre>    .code: code/BUCK.c
-</pre></div>
-</section>
+            <section><dl>
+<dt>BUCK</dt>
+<dd>
+<p>keystore(
+    name = 'debug_keystore',
+    store = 'debug.keystore',
+    properties = 'debug.keystore.properties',
+)</p>
+<p>android_resource(
+    name = 'res',
+    res = 'src/main/res',
+    package = 'com.facebook.shimmer.example',
+    visibility = ['//shimmer-android-example:src'],
+)</p>
+<p>android_library(
+    name = 'src',
+    srcs = glob(['src/main/java/*<em>/</em>.java']),
+    deps = [
+        ':res',
+        '//shimmer-android:src',
+    ],
+)</p>
+<p>android_binary(
+    name = 'bin',
+    manifest = 'src/main/AndroidManifest.xml',
+    keystore = ':debug_keystore',
+    deps = [
+        ':res',
+        ':src',
+    ],
+)</p>
+<p>project_config(
+    src_target = ':bin',
+    src_roots = ['src/main/java'],
+)</p>
+</dd>
+</dl></section>
             
           </div>
           <div class="presenter_notes">
@@ -2007,7 +2041,7 @@ div.slide table:not(.highlighttable) tr td:first-child {
         </tr>
         
         <tr id="toc-row-5" class="sub">
-          <th><a href="#slide5">BUCK file</a></th>
+          <th><a href="#slide5">Configurasyon file</a></th>
           <td><a href="#slide5">5</a></td>
         </tr>
         
