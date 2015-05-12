@@ -22,9 +22,9 @@ Mayıs 2015
 
 İşlem         | Gradle          | Buck
 --------------|-----------------|------------------
-Clean         | `32.80s`        | '2.49s'
-Build         | `deb`           | APT
-After Clean   | `rpm`           | Yum
+Clean         | `32.80s`        | `2.49s`
+Build         | `39.50s`        | `3.44s`
+After Clean   | `63.05s`        | `7.03s`
 
 ##  Bilgi Notları
 
