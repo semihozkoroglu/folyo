@@ -18,16 +18,13 @@ Mayıs 2015
 
 -   Genel olarak odaklandığı nokta hız, ant'a göre iki kat daha hızlı derleme yapar
 
-##  Benim için mi?
+##  Süreler
 
-Buck 3 tane öncelikli kavrama sahip
-
--   Örneğin bir makale yazarken ana fikri önce folyo biçiminde
-    hazırlayabilirsiniz
-
--   Veya bir kitabın bölümlerini önce bir folyoya dökebilirsiniz
-
--   Bir öncü doküman
+İşlem         | Gradle          | Buck
+--------------|-----------------|------------------
+Clean         | `32.80s`        | '2.49s'
+Build         | `deb`           | APT
+After Clean   | `rpm`           | Yum
 
 ##  Bilgi Notları
 
