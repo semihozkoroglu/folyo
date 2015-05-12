@@ -20,11 +20,12 @@ Mayıs 2015
 
 ##  Süreler
 
-İşlem         | Gradle          | Buck
---------------|-----------------|------------------
-Clean         | `32.80s`        | `2.49s`
-Build         | `39.50s`        | `3.44s`
-After Clean   | `63.05s`        | `7.03s`
+İşlem          | Gradle          | Buck
+---------------|-----------------|------------------
+Clean          | `32.80s`        | `2.49s`
+Build          | `39.50s`        | `3.44s`
+After Clean    | `63.05s`        | `7.03s
+Parallel Build | `60.83s`        |
 
 ##  Bilgi Notları
 
