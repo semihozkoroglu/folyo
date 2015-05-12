@@ -40,4 +40,4 @@ Parallel Build | `60.83s`        |
 ## BUCK file
 
         !text
-        .code: code/BUCK.java
+        .code: code/BUCK.c
