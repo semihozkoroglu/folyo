@@ -20,6 +20,17 @@ Mayıs 2015
 
 -   Buck 
 
+## Kurulum
+
+        !sh
+        $ git clone https://github.com/facebook/buck.git
+
+        $ cd buck
+
+        $ ant
+
+        $ sudo ln -s ${PWD}/bin/buck /usr/bin/buck
+
 ##  Süreler
 
 İşlem          | Gradle          | Buck
